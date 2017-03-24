@@ -1,0 +1,854 @@
+/* reset -------------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body{
+  background-color: #E7E18F;
+}
+
+ul {
+    list-style:none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:link {
+    color: blue
+}
+a:visited {
+    color: blue
+}
+
+/* common -------------------------------------------- */
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    height: 60px;
+    background-color: #eaeaea;
+}
+
+.header-box {
+    margin-left : auto ;
+    margin-right : auto ;
+    width: 960px;
+}
+
+.logo {
+    float: left;
+}
+
+a:link.menu {
+    float: right;
+    display:block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    margin: 15px 0 0 10px;
+}
+a:hover.menu {
+    color: #f00;
+}
+a:active.menu {
+    color: #00f;
+}
+a:visited.menu {
+    color: #000;
+}
+p.menu {
+    float: right;
+    display:block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    margin: 15px 0 0 10px;
+}
+
+.content {
+    margin-left : auto ;
+    margin-right : auto ;
+    width: 960px;
+}
+
+.msg {
+    color: #FF0000;
+}
+
+/* top page -------------------------------------------- */
+
+.item-list li {
+    float:left;
+    margin-top: 20px;
+    margin-left: 20px;
+    width:300px;
+}
+
+.item-list .item {
+    text-align: center;
+}
+
+.item-list .item-img{
+    width:300px;
+}
+
+.item-list .item-info{
+    margin-top: 5px;
+}
+
+.item-list .item-name {
+    float:left;
+}
+
+.item-list .item-price {
+    display:block;
+    float:right;
+}
+
+.item-list .cart-btn {
+    display:block;
+    clear:both;
+    margin:0 auto;
+    width:160px;
+    height:40px;
+    color: #fff;
+    font-size: 100%;
+    background-color: #32ccb6;
+    border:none;
+}
+
+.item-list .sold-out{
+    clear:both;
+    height:40px;
+    color: #FF0000;
+    font-size: 1.2em;
+}
+
+/* cart, finish page -------------------------------------------- */
+
+.title {
+    margin-top: 20px;
+    font-size: 1.4em;
+}
+
+.cart-list-title {
+    clear:both;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-list-title .cart-list-price{
+    margin-left: 700px;
+}
+
+.cart-list-title .cart-list-num {
+    margin-left: 150px;
+}
+
+.cart-list .cart-item {
+    clear:both;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-list .cart-item-img{
+    width:120px;
+}
+
+.cart-list .cart-item-name{
+    position: absolute;
+    margin-left: 30px;
+    width: 500px;
+}
+
+.cart-item-del{
+    display: inline;
+    position: absolute;
+    margin-left: 470px;
+}
+
+.cart-list .cart-item-price {
+    position: absolute;
+    margin-left: 560px;
+    color: #FF0000;
+}
+
+.cart-list .form_select_amount {
+    float:right;
+    margin-left: 50px;
+}
+
+.cart-list .cart-item-num {
+    width:100px;
+    height:30px;
+    font-size: 1.2em;
+}
+
+.buy-sum-box{
+    clear:both;
+    margin-top: 10px;
+}
+
+.buy-sum-box .buy-sum-title{
+    margin-left: 620px;
+}
+
+.buy-sum-box .buy-sum-price{
+    margin-left: 30px;
+    font-size: 2em;
+    color: #FF0000;
+}
+
+.buy-btn {
+    display:block;
+    margin-top: 10px;
+    width:100%;
+    height:60px;
+    color: #ffffff;
+    background-color: #FF8A00;
+    font-size: 1.4em;
+    border:none;
+}
+
+/* finish page -------------------------------------------- */
+
+.finish-msg{
+    margin-top: 20px;
+    height:60px;
+    font-size: 1.4em;
+    text-align: center;
+    line-height:60px;
+    background-color: #FFF2DC;
+}
+
+.finish-item-price {
+    position: absolute;
+    margin-left: 800px;
+}
+
+/* login/regist page ------------------------------------ */
+div .login_form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 360px;
+}
+div .login_form dl {
+	margin-top: 20px;
+	width:360px;
+}
+div .login_form dt {
+	margin-top: 5px;
+	padding-top: 6px;
+	float:left;
+	clear:left;
+	width:120px;
+}
+div .login_form dd {
+	margin-top: 5px;
+	padding-top: 3px;
+	float:left;
+	width: 240px;
+}
+div .login_form input[type="text"] {
+	width: 240px;
+}
+div .login_error {
+	padding-top: 10px;
+	text-align: center;
+	color: #f00;
+	font-weight: bold;
+}
+div .login_submit {
+	clear: both;
+	padding-top: 10px;
+	text-align: center;
+}
+
+
+/* 表示画面 */
+#stage {
+  position: relative;
+	overflow: hidden;
+	background:#777;
+  height: 400px;
+}
+
+/* 全てのラジオボタンを非表示に */
+#back1,#back2,#back3,#back4,#back5,#next1,#next2,#next3,#next4,#next5,#r1,#r2,#r3,#r4,#r5{
+	display: none;
+}
+/*全ての写真を水平一列に格納したdiv、#photosに,スライドショーの animation を設定*/
+#photos {
+	position:absolute;
+	top:0;
+	width:100%;
+	animation: imgPassToLeft0 30s infinite;
+}
+/*各写真の並び位置を設定 */
+#photo0 { left:  0%; }
+#photo1 { left:100%; }
+#photo2 { left:200%; }
+#photo3 { left:300%; }
+#photo4 { left:400%; }
+#photo5 { left:500%; }
+#photo6 { left:600%; }
+.pic { position:absolute;top:0;width:100%; }
+/*写真サイズ・位置ボタンサイズを可変に*/
+.pic img:nth-child(1) { width:100%; }
+.order { float:left; }
+.order img { width:110%; }
+@media screen and (max-width: 500px) {
+	.order img { width:80%; }
+	#slide_position img { width:80%; }
+}
+/* 位置表示ボタン */
+#btn_band {
+	position:relative;
+	width:100px;
+  height:300px;
+	margin:0 auto;
+	margin-top:18%;
+}
+#slide_position {
+	position:absolute;left:0;
+	animation:orderToLeft0 30s infinite;
+}
+.circ:hover { cursor:pointer; }
+
+/* 位置表示ボタンクリック時のanimation設定 */
+#r1:checked ~ #photos {	animation: imgPassToLeft1 30s infinite;	animation-delay: -28.8s;}
+#r2:checked ~ #photos {	animation: imgPassToLeft2 30s infinite;	animation-delay:  -4.8s;}
+#r3:checked ~ #photos {	animation: imgPassToLeft3 30s infinite;	animation-delay: -10.8s;}
+#r4:checked ~ #photos {	animation: imgPassToLeft4 30s infinite;	animation-delay: -16.8s;}
+#r5:checked ~ #photos {	animation: imgPassToLeft5 30s infinite;	animation-delay: -22.8s;}
+#r1:checked ~ #btn_band #slide_position { animation:orderToLeft1 30s infinite; animation-delay: -28.8s; }
+#r2:checked ~ #btn_band #slide_position { animation:orderToLeft2 30s infinite; animation-delay: -4.8s; }
+#r3:checked ~ #btn_band #slide_position { animation:orderToLeft3 30s infinite; animation-delay: -10.8s; }
+#r4:checked ~ #btn_band #slide_position { animation:orderToLeft4 30s infinite; animation-delay: -16.8s; }
+#r5:checked ~ #btn_band #slide_position { animation:orderToLeft5 30s infinite; animation-delay: -22.8s; }
+
+/*送りボタン文字（＜、＞）の設定*/
+
+.b_left, .b_right {
+	position: absolute;
+	top: 40%;
+	opacity:0;
+}
+.b_left {
+	left: 3%;height:15%;width:10%;
+	background-image:url(../images/back_1.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+.b_right {
+	left: 85%;height:15%;width:10%;
+	background-image:url(../images/forward_1.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+.b_left:hover {
+	background-image:url(../images/back_2.png);
+}
+.b_right:hover {
+	background-image:url(../images/forward_2.png);
+}
+
+/*ボタン文字hover時の設定*/
+.pic:hover > label div {
+	opacity:1;
+}
+.pic label div:hover {
+	cursor:pointer;
+}
+/* 右送りボタンクリック時のanimation設定 */
+#next1:checked ~ #photos {
+	animation: imgPassToLeft1 30s infinite;
+	animation-delay: -4.8s;
+}
+#next2:checked ~ #photos {
+	animation: imgPassToLeft2 30s infinite;
+	animation-delay: -10.8s;
+}
+#next3:checked ~ #photos {
+	animation: imgPassToLeft3 30s infinite;
+	animation-delay: -16.8s;
+
+}
+#next4:checked ~ #photos {
+	animation: imgPassToLeft4 30s infinite;
+	animation-delay: -22.8s;
+}
+#next5:checked ~ #photos {
+	animation: imgPassToLeft5 30s infinite;
+	animation-delay: -28.8s;
+}
+#next1:checked ~ #btn_band #slide_position { animation:orderToLeft2 30s infinite; animation-delay: -4.8s; }
+#next2:checked ~ #btn_band #slide_position { animation:orderToLeft3 30s infinite; animation-delay: -10.8s; }
+#next3:checked ~ #btn_band #slide_position { animation:orderToLeft4 30s infinite; animation-delay: -16.8s; }
+#next4:checked ~ #btn_band #slide_position { animation:orderToLeft5 30s infinite; animation-delay: -22.8s; }
+#next5:checked ~ #btn_band #slide_position { animation:orderToLeft1 30s infinite; animation-delay: -28.8s; }
+
+/* 左送りボタンクリック時のanimation設定 */
+#back1:checked ~ #photos {
+	animation: imgPassRight1 30s infinite;
+	animation-delay: 1s;
+}
+#back1:checked ~ #photos {
+	animation: imgPassToRight1 30s infinite;
+	animation-delay: -28.8s;
+}
+#back2:checked ~ #photos {
+	animation: imgPassToRight2 30s infinite;
+	animation-delay: -22.8s;
+}
+#back3:checked ~ #photos {
+	animation: imgPassToRight3 30s infinite;
+	animation-delay: -16.8s;
+}
+#back4:checked ~ #photos {
+	animation: imgPassToRight4 30s infinite;
+	animation-delay: -10.8s;
+}
+#back5:checked ~ #photos {
+	animation: imgPassToRight5 30s infinite;
+	animation-delay: -4.8s;
+}
+#back1:checked ~ #btn_band #slide_position { animation:orderToRight5 30s infinite; animation-delay: -4.8s; }
+#back2:checked ~ #btn_band #slide_position { animation:orderToRight4 30s infinite; animation-delay: -28.8s; }
+#back3:checked ~ #btn_band #slide_position { animation:orderToRight3 30s infinite; animation-delay: -22.8s; }
+#back4:checked ~ #btn_band #slide_position { animation:orderToRight2 30s infinite; animation-delay: -16.8s; }
+#back5:checked ~ #btn_band #slide_position { animation:orderToRight1 30s infinite; animation-delay: -10.8s; }
+/* スライド移動animation設定 */
+@keyframes imgPassToLeft0 {
+	0%  { left:-100%; }
+	16% { left:-100%; }
+	20% { left:-200%; }
+	36% { left:-200%; }
+	40% { left:-300%; }
+	56% { left:-300%; }
+	60% { left:-400%; }
+	76% { left:-400%; }
+	80% { left:-500%; }
+	96% { left:-500%; }
+	100% { left:-600%; }
+}
+@keyframes imgPassToLeft1 {
+	0% { left:-100%; }
+	16% { left:-100%; }
+	20% { left:-200%; }
+	36% { left:-200%; }
+	40% { left:-300%; }
+	56% { left:-300%; }
+	60% { left:-400%; }
+	76% { left:-400%; }
+	80% { left:-500%; }
+	96% { left:-500%; }
+	100% { left:-600%; }
+}
+@keyframes imgPassToLeft2 {
+	0% { left:-100%; }
+	16% { left:-100%; }
+	20% { left:-200%; }
+	36% { left:-200%; }
+	40% { left:-300%; }
+	56% { left:-300%; }
+	60% { left:-400%; }
+	76% { left:-400%; }
+	80% { left:-500%; }
+	96% { left:-500%; }
+	100% { left:-600%; }
+}
+@keyframes imgPassToLeft3 {
+	0% { left:-100%; }
+	16% { left:-100%; }
+	20% { left:-200%; }
+	36% { left:-200%; }
+	40% { left:-300%; }
+	56% { left:-300%; }
+	60% { left:-400%; }
+	76% { left:-400%; }
+	80% { left:-500%; }
+	96% { left:-500%; }
+	100% { left:-600%; }
+}
+@keyframes imgPassToLeft4 {
+	0% { left:-100%; }
+	16% { left:-100%; }
+	20% { left:-200%; }
+	36% { left:-200%; }
+	40% { left:-300%; }
+	56% { left:-300%; }
+	60% { left:-400%; }
+	76% { left:-400%; }
+	80% { left:-500%; }
+	96% { left:-500%; }
+	100% { left:-600%; }
+}
+@keyframes imgPassToLeft5 {
+	0% { left:-100%; }
+	16% { left:-100%; }
+	20% { left:-200%; }
+	36% { left:-200%; }
+	40% { left:-300%; }
+	56% { left:-300%; }
+	60% { left:-400%; }
+	76% { left:-400%; }
+	80% { left:-500%; }
+	96% { left:-500%; }
+	100% { left:-600%; }
+}
+@keyframes imgPassToRight1 {
+	0% { left:-500%; }
+	16% { left:-500%; }
+	20% { left:-400%; }
+	36% { left:-400%; }
+	40% { left:-300%; }
+	56% { left:-300%; }
+	60% { left:-200%; }
+	76% { left:-200%; }
+	80% { left:-100%; }
+	96% { left:-100%; }
+	100% { left:0%; }
+}
+@keyframes imgPassToRight2 {
+	0% { left:-500%; }
+	16% { left:-500%; }
+	20% { left:-400%; }
+	36% { left:-400%; }
+	40% { left:-300%; }
+	56% { left:-300%; }
+	60% { left:-200%; }
+	76% { left:-200%; }
+	80% { left:-100%; }
+	96% { left:-100%; }
+	100% { left:0%; }
+}
+@keyframes imgPassToRight3 {
+	0% { left:-500%; }
+	16% { left:-500%; }
+	20% { left:-400%; }
+	36% { left:-400%; }
+	40% { left:-300%; }
+	56% { left:-300%; }
+	60% { left:-200%; }
+	76% { left:-200%; }
+	80% { left:-100%; }
+	96% { left:-100%; }
+	100% { left:0%; }
+}
+@keyframes imgPassToRight4 {
+	0% { left:-500%; }
+	16% { left:-500%; }
+	20% { left:-400%; }
+	36% { left:-400%; }
+	40% { left:-300%; }
+	56% { left:-300%; }
+	60% { left:-200%; }
+	76% { left:-200%; }
+	80% { left:-100%; }
+	96% { left:-100%; }
+	100% { left:0%; }
+}
+@keyframes imgPassToRight5 {
+	0% { left:-500%; }
+	16% { left:-500%; }
+	20% { left:-400%; }
+	36% { left:-400%; }
+	40% { left:-300%; }
+	56% { left:-300%; }
+	60% { left:-200%; }
+	76% { left:-200%; }
+	80% { left:-100%; }
+	96% { left:-100%; }
+	100% { left:0%; }
+}
+/* 位置表示ボタン移動animation設定 */
+@keyframes orderToLeft0 {
+	0% { left:  0; opacity:1;}
+	16% { left: 0; opacity:1; }
+	16.1% { opacity:0; }
+	19% { opacity:0; }
+	20% { left:20%; opacity:1; }
+	36% { left:20%; opacity:1; }
+	36.1% { opacity:0; }
+	39% { opacity:0; }
+	40% { left:40%; opacity:1; }
+	56% { left:40%; opacity:1; }
+	56.1% { opacity:0; }
+	59% { opacity:0; }
+	60% { left:60%; opacity:1; }
+	76% { left:60%; opacity:1; }
+	76.1% { opacity:0; }
+	79% { opacity:0; }
+	80% { left:80%; opacity:1; }
+	96% { left:80%; opacity:1; }
+	96.1% { opacity:0; }
+	99% { opacity:0; }
+	100% { left:0%; opacity:1; }
+}
+@keyframes orderToLeft1 {
+	0% { left:  0; opacity:1;}
+	16% { left: 0; opacity:1; }
+	16.1% { opacity:0; }
+	19% { opacity:0; }
+	20% { left:20%; opacity:1; }
+	36% { left:20%; opacity:1; }
+	36.1% { opacity:0; }
+	39% { opacity:0; }
+	40% { left:40%; opacity:1; }
+	56% { left:40%; opacity:1; }
+	56.1% { opacity:0; }
+	59% { opacity:0; }
+	60% { left:60%; opacity:1; }
+	76% { left:60%; opacity:1; }
+	76.1% { opacity:0; }
+	79% { opacity:0; }
+	80% { left:80%; opacity:1; }
+	96% { left:80%; opacity:1; }
+	96.1% { opacity:0; }
+	99% { opacity:0; }
+	100% { left:0%; opacity:1; }
+}
+@keyframes orderToLeft2 {
+	0% { left:  0; opacity:1;}
+	16% { left: 0; opacity:1; }
+	16.1% { opacity:0; }
+	19% { opacity:0; }
+	20% { left:20%; opacity:1; }
+	36% { left:20%; opacity:1; }
+	36.1% { opacity:0; }
+	39% { opacity:0; }
+	40% { left:40%; opacity:1; }
+	56% { left:40%; opacity:1; }
+	56.1% { opacity:0; }
+	59% { opacity:0; }
+	60% { left:60%; opacity:1; }
+	76% { left:60%; opacity:1; }
+	76.1% { opacity:0; }
+	79% { opacity:0; }
+	80% { left:80%; opacity:1; }
+	96% { left:80%; opacity:1; }
+	96.1% { opacity:0; }
+	99% { opacity:0; }
+	100% { left:0%; opacity:1; }
+}
+@keyframes orderToLeft3 {
+	0% { left:  0; opacity:1;}
+	16% { left: 0; opacity:1; }
+	16.1% { opacity:0; }
+	19% { opacity:0; }
+	20% { left:20%; opacity:1; }
+	36% { left:20%; opacity:1; }
+	36.1% { opacity:0; }
+	39% { opacity:0; }
+	40% { left:40%; opacity:1; }
+	56% { left:40%; opacity:1; }
+	56.1% { opacity:0; }
+	59% { opacity:0; }
+	60% { left:60%; opacity:1; }
+	76% { left:60%; opacity:1; }
+	76.1% { opacity:0; }
+	79% { opacity:0; }
+	80% { left:80%; opacity:1; }
+	96% { left:80%; opacity:1; }
+	96.1% { opacity:0; }
+	99% { opacity:0; }
+	100% { left:0%; opacity:1; }
+}
+@keyframes orderToLeft4 {
+	0% { left:  0; opacity:1;}
+	16% { left: 0; opacity:1; }
+	16.1% { opacity:0; }
+	19% { opacity:0; }
+	20% { left:20%; opacity:1; }
+	36% { left:20%; opacity:1; }
+	36.1% { opacity:0; }
+	39% { opacity:0; }
+	40% { left:40%; opacity:1; }
+	56% { left:40%; opacity:1; }
+	56.1% { opacity:0; }
+	59% { opacity:0; }
+	60% { left:60%; opacity:1; }
+	76% { left:60%; opacity:1; }
+	76.1% { opacity:0; }
+	79% { opacity:0; }
+	80% { left:80%; opacity:1; }
+	96% { left:80%; opacity:1; }
+	96.1% { opacity:0; }
+	99% { opacity:0; }
+	100% { left:0%; opacity:1; }
+}
+@keyframes orderToLeft5 {
+	0% { left:  0; opacity:1;}
+	16% { left: 0; opacity:1; }
+	16.1% { opacity:0; }
+	19% { opacity:0; }
+	20% { left:20%; opacity:1; }
+	36% { left:20%; opacity:1; }
+	36.1% { opacity:0; }
+	39% { opacity:0; }
+	40% { left:40%; opacity:1; }
+	56% { left:40%; opacity:1; }
+	56.1% { opacity:0; }
+	59% { opacity:0; }
+	60% { left:60%; opacity:1; }
+	76% { left:60%; opacity:1; }
+	76.1% { opacity:0; }
+	79% { opacity:0; }
+	80% { left:80%; opacity:1; }
+	96% { left:80%; opacity:1; }
+	96.1% { opacity:0; }
+	99% { opacity:0; }
+	100% { left:0%; opacity:1; }
+}
+@keyframes orderToRight1 {
+	0% { left:  0; opacity:1;}
+	16% { left: 0; opacity:1; }
+	16.1% { opacity:0; }
+	19% { opacity:0; }
+	20% { left:80%; opacity:1; }
+	36% { left:80%; opacity:1; }
+	36.1% { opacity:0; }
+	39% { opacity:0; }
+	40% { left:60%; opacity:1; }
+	56% { left:60%; opacity:1; }
+	56.1% { opacity:0; }
+	59% { opacity:0; }
+	60% { left:40%; opacity:1; }
+	76% { left:40%; opacity:1; }
+	76.1% { opacity:0; }
+	79% { opacity:0; }
+	80% { left:20%; opacity:1; }
+	96% { left:20%; opacity:1; }
+	96.1% { opacity:0; }
+	99% { opacity:0; }
+	100% { left:0%; opacity:1; }
+}
+@keyframes orderToRight2 {
+	0% { left:  0; opacity:1;}
+	16% { left: 0; opacity:1; }
+	16.1% { opacity:0; }
+	19% { opacity:0; }
+	20% { left:80%; opacity:1; }
+	36% { left:80%; opacity:1; }
+	36.1% { opacity:0; }
+	39% { opacity:0; }
+	40% { left:60%; opacity:1; }
+	56% { left:60%; opacity:1; }
+	56.1% { opacity:0; }
+	59% { opacity:0; }
+	60% { left:40%; opacity:1; }
+	76% { left:40%; opacity:1; }
+	76.1% { opacity:0; }
+	79% { opacity:0; }
+	80% { left:20%; opacity:1; }
+	96% { left:20%; opacity:1; }
+	96.1% { opacity:0; }
+	99% { opacity:0; }
+	100% { left:0%; opacity:1; }
+}
+@keyframes orderToRight3 {
+	0% { left:  0; opacity:1;}
+	16% { left: 0; opacity:1; }
+	16.1% { opacity:0; }
+	19% { opacity:0; }
+	20% { left:80%; opacity:1; }
+	36% { left:80%; opacity:1; }
+	36.1% { opacity:0; }
+	39% { opacity:0; }
+	40% { left:60%; opacity:1; }
+	56% { left:60%; opacity:1; }
+	56.1% { opacity:0; }
+	59% { opacity:0; }
+	60% { left:40%; opacity:1; }
+	76% { left:40%; opacity:1; }
+	76.1% { opacity:0; }
+	79% { opacity:0; }
+	80% { left:20%; opacity:1; }
+	96% { left:20%; opacity:1; }
+	96.1% { opacity:0; }
+	99% { opacity:0; }
+	100% { left:0%; opacity:1; }
+}
+@keyframes orderToRight4 {
+	0% { left:  0; opacity:1;}
+	16% { left: 0; opacity:1; }
+	16.1% { opacity:0; }
+	19% { opacity:0; }
+	20% { left:80%; opacity:1; }
+	36% { left:80%; opacity:1; }
+	36.1% { opacity:0; }
+	39% { opacity:0; }
+	40% { left:60%; opacity:1; }
+	56% { left:60%; opacity:1; }
+	56.1% { opacity:0; }
+	59% { opacity:0; }
+	60% { left:40%; opacity:1; }
+	76% { left:40%; opacity:1; }
+	76.1% { opacity:0; }
+	79% { opacity:0; }
+	80% { left:20%; opacity:1; }
+	96% { left:20%; opacity:1; }
+	96.1% { opacity:0; }
+	99% { opacity:0; }
+	100% { left:0%; opacity:1; }
+}
+@keyframes orderToRight5 {
+	0% { left:  0; opacity:1;}
+	16% { left: 0; opacity:1; }
+	16.1% { opacity:0; }
+	19% { opacity:0; }
+	20% { left:80%; opacity:1; }
+	36% { left:80%; opacity:1; }
+	36.1% { opacity:0; }
+	39% { opacity:0; }
+	40% { left:60%; opacity:1; }
+	56% { left:60%; opacity:1; }
+	56.1% { opacity:0; }
+	59% { opacity:0; }
+	60% { left:40%; opacity:1; }
+	76% { left:40%; opacity:1; }
+	76.1% { opacity:0; }
+	79% { opacity:0; }
+	80% { left:20%; opacity:1; }
+	96% { left:20%; opacity:1; }
+	96.1% { opacity:0; }
+	99% { opacity:0; }
+	100% { left:0%; opacity:1; }
+}
+
+
+
+.how{
+  display: flex;
+}
